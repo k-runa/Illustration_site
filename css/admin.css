@@ -1,0 +1,538 @@
+@charset "UTF-8";
+
+/* 共通部分　土台
+------------------------------------------ */
+
+html {
+	font-size: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	background-color: #f4f2ef;
+	color: #49495c;
+	line-height: 1.7;
+
+	/* フッター固定管理 */
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* mainを余白埋める係にする */
+main {
+	flex: 1;
+}
+
+/* 横幅設定 */
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.detail-container {
+	max-width: 1300px;
+	margin: 0 auto 20px;
+	padding: 0 20px;
+}
+
+.align-center {
+	display: flex;
+	align-items: center;
+}
+
+.container-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* header
+------------------------------------------- */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eea08d;
+	padding: 10px 20px;
+}
+
+header br {
+	display: none;
+}
+
+.now-login {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+.login-name {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header-title {
+	font-family: "M PLUS 1 Code", sans-serif;
+	font-size: 1.2rem;
+}
+
+.logout-btn {
+	display: inline-block;
+	padding: 5px 12px;
+	background-color: #e7dac1;
+	color: #4f3f35;
+	text-decoration: none;
+	border-radius: 30px;
+	border-bottom: 3px #a7826c solid;
+}
+
+/* footer
+---------------------------------------------- */
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background-color: #e7dac1;
+	font-family: "M PLUS 1 Code", sans-serif;
+}
+
+/* タイトル系
+-------------------------------------------- */
+h1 {
+	font-family: "M PLUS 1 Code", sans-serif;
+	font-weight: 300;
+	font-size: 1.7rem;
+	text-align: center;
+	color: #f4f2ef;
+	border-radius: 50px;
+	margin: 30px auto;
+	padding: 10px 40px;
+	width: fit-content;
+	max-width: 100%;
+}
+
+.h1-top {
+	background-color: #5b668c;
+	border-bottom: 4px #323953 solid;
+}
+.h1-disp {
+	background-color: #89a79e;
+	border-bottom: 4px #56766d solid;
+}
+.h1-delete {
+	background-color: #95a4d0;
+	border-bottom: 4px #5c6b99 solid;
+}
+.h1-add {
+	background-color: #eea08d;
+	border-bottom: 4px #be6c58 solid;
+}
+.h1-edit {
+	background-color: #b7a68c;
+	border-bottom: 4px #897960 solid;
+}
+
+.h1-text {
+	display: block;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.h1-text-error {
+	color: #cd5e4a;
+	margin: 30% 0 30%;
+}
+
+.h1-text-catch-e {
+	margin: 30% 0 30%;
+}
+
+.h1-text-catch-e br {
+	display: none;
+}
+
+.h1-text br {
+	display: none;
+}
+
+.h2-edit {
+	font-family: "M PLUS 1 Code", sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px #f4f2ef solid;
+}
+
+.h2-edit-before { color: #5c6b99; }
+.h2-edit-after { color: #be6c58; }
+
+.edit-before-text {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* ボタン
+-------------------------------------------- */
+.three-btn-group {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 40px;
+	border-radius: 40px;
+	text-decoration: none;
+	font-family: "M PLUS 1 Code", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+}
+
+.btn br {
+	display: none;
+}
+
+.btn:active {
+	transform: translateY(3px);
+}
+
+.btn-center {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+.one-back-btn {
+	background-color: #95a4d0;
+	border-bottom: 4px #5c6b99 solid;
+	margin: 0 10px;
+}
+
+.top-back-btn {
+	background-color: #95a774;
+	border-bottom: 4px #5b6647 solid;
+	margin: 0 10px;
+}
+
+.submit-btn-2column {
+	background-color: #c9887c;
+	border-bottom: 4px #995c50 solid;
+	margin: 0 10px;
+}
+
+.submit-btn {
+	width: 400px;
+	background-color: #c9887c;
+	border-bottom: 4px #995c50 solid;
+	margin: 30px 10px;
+}
+
+/* grid 一覧用
+--------------------------------------------- */
+
+.grid {
+	display: grid;
+	gap: 25px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	border-radius: 15px;
+	border-top: 3px #a59c8f solid;
+	border-left: 3px #bfb8ae solid;
+}
+
+.item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+.item:hover img {
+	transform: scale(1.05);
+}
+
+.container-grid {
+	display: grid;
+	grid-template-columns: 500px 500px;
+	gap: 30px;
+}
+
+.grid-edit {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+
+/* top
+-------------------------------------------- */
+
+.menu-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 200px);
+	gap: 40px;
+	justify-content: center;
+	margin: 60px 0;
+}
+
+.menu-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 40px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2rem;
+	letter-spacing: 0.02;
+}
+
+.menu-item-add { background: #eea08d; }
+.menu-item-edit { background: #b7a68c; }
+.menu-item-view { background: #89a79e; }
+.menu-item-delete { background: #95a4d0; }
+
+/* 詳細表示系
+------------------------------------------- */
+.detail {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+	background-color: #cfd0df;
+	border-radius: 60px;
+	padding: 40px;
+}
+
+.detail-2column {
+	display: flex;
+	gap: 40px;
+	background-color: #cfd0df;
+	border-radius: 60px;
+	flex-direction: column;
+	max-width: 95%;
+	padding: 40px;
+}
+
+.disp-text {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.disp-text-group {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.disp-pic {
+	overflow: hidden;
+	border-radius: 40px;
+}
+
+.disp-pic img {
+	flex: 1;
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border-radius: 60px;
+}
+
+.disp-title {
+	font-family: "M PLUS 1 Code", sans-serif;
+	font-size: 1.4rem;
+}
+
+.disp-content {
+	font-size: 1.1rem;
+	background-color: #f4f2ef;
+	border-radius: 40px;
+	padding: 15px 25px;
+	word-break: break-word;
+}
+
+.edit-before-preview {
+	background-color: #cfd0df;
+	border-radius: 23px;
+	padding: 15px;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.edit-before-preview img {
+	max-width: 100%;
+	width: 250px;
+	height: auto;
+	border-radius: 20px;
+}
+
+/* 入力フォーム
+----------------------------------------------- */
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.form label {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.form input, .form textarea {
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+	background-color: #fbfaf8;
+}
+
+.form textarea {
+	height: 200px;
+}
+
+.required {
+	padding: 0 3px;
+	color: #f4f2ef;
+	background-color: #c9887c;
+	border-radius: 4px;
+	margin-right: 7px;
+}
+
+.form p {
+	font-weight: bold;
+}
+
+/* 警告系
+--------------------------------------------- */
+.error-text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #cd5e4a;
+}
+
+.check-none {
+	text-align: center;
+	font-weight: bold;	
+}
+
+.error-text br {
+		display: none;
+	}
+
+/* 画像素材
+--------------------------------------------- */
+.gif {
+	display: block;
+	padding-top: 30px;
+	margin: 0 auto;
+	height: auto;
+	max-width: 150px;
+	height: auto;
+}
+
+/* スマホ版
+   ------------------------------------------------*/
+@media (max-width: 768px) {
+
+	header br {
+		display: inline;
+	}
+
+	.detail-container {
+		max-width: 100%;
+		margin-bottom: 0;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		margin: 30px 20px 20px;
+	}
+
+	.h1-group {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.error-text {
+		font-size: 1.5rem;
+		margin-top: 10px;
+	}
+
+	.h1-text br {
+		display: inline;
+	}
+
+	.h1-text-catch-e br {
+		display: inline;
+	}
+
+	.error-text br {
+		display: inline;
+	}
+
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.menu-grid {
+		grid-template-columns: 2, 1fr;
+	}
+
+	.detail {
+		display: flex;
+		flex-direction: column;
+		max-width: 95%;
+		margin: 0 auto;
+	}
+
+	.grid-edit {
+		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.btn-center {
+		padding-top: 20px;
+	}
+
+	.btn br {
+		display: inline;
+	}
+}
