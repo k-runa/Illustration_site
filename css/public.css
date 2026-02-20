@@ -50,7 +50,7 @@ footer {
 	letter-spacing: 0.1em;
 }
 .hero {
-	background-image: url(../images/hero_section.png);
+	background-image: url(../images/hero_section.PNG);
 	background-color: #ced2dd;
 	background-blend-mode: screen;
 	background-size: cover;
