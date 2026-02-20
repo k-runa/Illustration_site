@@ -12,6 +12,9 @@
 
 		$sql = 'SELECT name FROM mst_staff WHERE code=? AND password=?';
 		$stmt = $dbh->prepare($sql);
+
+		$data = array();
+
 		$data[] = $staff_code;
 		$data[] = $staff_pass;
 		$stmt->execute($data);
