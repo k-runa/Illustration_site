@@ -1,0 +1,6 @@
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `illustration` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+
+USE `illustration`;
+INSERT INTO `mst_illustration` VALUES (25,'IMG_1538.jpg','no title','不明','aaaaaaaaaaaaaaaaaaaaあああああああああああああああああああああああああああああああああああaaaaaaaaaaaa'),(27,'イラスト29.png','no title','不明','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),(28,'IMG_1652.jpg','no title','不明','aaaaaaaaaaaaa'),(29,'hero_section.png','no title','不明','aaaaaaaaaaa'),(30,'イラスト43.jpg','no title','不明','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),(33,'IMG_1310.JPG','no title','不明','rrrrrrrrrrrrrrrrrrrrrrrr'),(35,'IMG_1542.jpeg','no title','不明','ｓ'),(37,'IMG_1348.jpg','no title','不明','ああああああああああああああああああああああああああああああああああああああああああああああああ'),(38,'IMG_1389.jpg','no title','不明','あｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓ'),(40,'IMG_1536.jpeg','no title','不明','ｘｘｘｘｘｘｘｘ');
+INSERT INTO `mst_staff` VALUES (1,'きたやま','490b6c600e1a306bf2feefc7ee9631b3');
