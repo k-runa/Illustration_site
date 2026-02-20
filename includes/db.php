@@ -1,5 +1,3 @@
-
-
 <?php
 $databaseUrl = getenv('DATABASE_URL');
 
@@ -22,4 +20,3 @@ try {
     exit;
 }
 ?>
-
