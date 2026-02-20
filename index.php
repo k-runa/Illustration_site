@@ -4,15 +4,20 @@
 	try{
 		require_once('includes/db.php');
 
-		$sql = 'SELECT code,picture FROM mst_illustration WHERE 1';
+		$sql = 'SELECT code,picture FROM mst_illustration WHERE TRUE';
 		$stmt = $dbh->prepare($sql);
 		$stmt->execute();
 
 		$dbh = null;
 		
 	} catch (Exception $e) {
-		 die("【indexのエラー】: " . $e->getMessage());
-		
+?>
+		<div class="detail-wrapper">
+			<main class="illust-detail-body error-mode">
+				<p class="exception-e ">ただいま障害により大変ご迷惑をお掛けしております。</p>
+			</main>
+		</div>
+<?php
 		require_once('includes/footer_public.php');
 		exit();
 	}
