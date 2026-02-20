@@ -11,13 +11,8 @@
 		$dbh = null;
 		
 	} catch (Exception $e) {
-?>
-		<div class="detail-wrapper">
-			<main class="illust-detail-body error-mode">
-				<p class="exception-e ">ただいま障害により大変ご迷惑をお掛けしております。</p>
-			</main>
-		</div>
-<?php
+		 die("【indexのエラー】: " . $e->getMessage());
+		
 		require_once('includes/footer_public.php');
 		exit();
 	}
