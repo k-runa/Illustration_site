@@ -16,7 +16,6 @@ try {
     $dbh = new PDO($dsn, $user, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Render側に正しい「棚」を2つ作ります
     $dbh->exec("CREATE TABLE IF NOT EXISTS mst_illustration (
         code SERIAL PRIMARY KEY,
         picture TEXT,
@@ -36,3 +35,4 @@ try {
     exit;
 }
 ?>
+
