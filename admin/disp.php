@@ -53,17 +53,15 @@
 					<p class="disp-content"><?php print $pic_title; ?></p>
 				</div>
 				<div class="disp-text-group">
-					<p class="disp-title">制作日：
+					<p class="disp-title">制作日：</p>
+					<p class="disp-content">
 						<?php 
-							if ($pic_date === '0001-01-01') {
+							if ($pic_date === '0001-01-01' || $pic_date === '') {
 								print '不明';
 							} else {
 								print $pic_date;
 							}
 						?>
-					</p>
-					<p class="disp-content">
-
 					</p>
 				</div>
 				<div class="disp-text-group">
