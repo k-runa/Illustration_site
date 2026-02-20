@@ -7,7 +7,7 @@
 	try {
 		require_once ('../includes/db.php');
 
-		$sql = 'SELECT code,picture,title FROM mst_illustration WHERE 1';
+		$sql = 'SELECT code,picture,title FROM mst_illustration WHERE TRUE';
 		$stmt = $dbh->prepare($sql);
 		$stmt->execute();
 		
