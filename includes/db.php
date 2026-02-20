@@ -16,6 +16,7 @@ try {
     $dbh = new PDO($dsn, $user, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+    // テーブル作成
     $dbh->exec("CREATE TABLE IF NOT EXISTS mst_illustration (
         code SERIAL PRIMARY KEY,
         picture TEXT,
@@ -35,4 +36,3 @@ try {
     exit;
 }
 ?>
-
