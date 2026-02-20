@@ -22,8 +22,8 @@ try {
     $dbh->exec("CREATE TABLE IF NOT EXISTS mst_staff (code SERIAL PRIMARY KEY, name TEXT, password TEXT);");
 
 } catch (PDOException $e) {
-    // 原因を突き止めるために、エラーを直接出します
-    echo "接続失敗: " . $e->getMessage();
+    // 「障害により〜」ではなく、本当の理由を画面に出します
+    echo "接続失敗の詳細: " . $e->getMessage();
     exit();
 }
 ?>
