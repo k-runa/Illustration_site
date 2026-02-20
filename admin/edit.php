@@ -60,7 +60,7 @@
 				</label>
 				<label>
 					<p>描いた日付を入力してください。</p>
-					<input type="text" name="date" value="<?php print $pic_date; ?>">
+					<input type="text" name="date" value="<?php if ($pic_date === '0001-01-01') {print '不明';} else {print $pic_date;} ?>">
 				</label>
 				<label>
 					<p>コメントを入力してください。</p>

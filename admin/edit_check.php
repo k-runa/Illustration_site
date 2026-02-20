@@ -75,7 +75,14 @@ try {
 				</div>
 				<div class="disp-text-group">
 					<p class="disp-title">制作日：</p>
-					<p class="disp-content"><?php print $pic_date_before; ?></p>
+					<p class="disp-content">
+						<?php if ($pic_date_before === '0001-01-01') {
+								print '不明';
+							} else {
+								print $pic_date_before;
+							}
+						?>
+					</p>
 				</div>
 				<div class="disp-text-group">
 					<p class="disp-title">コメント：</p>
@@ -126,10 +133,16 @@ try {
 					<p class="disp-title">制作日：</p>
 					<div class="disp-content">
 						<?php
-							if ($pic_date_after === $pic_date_before) {
-								print $pic_date_before; 
+							if ($pic_date_after === $pic_date_before || $pic_date_after === '') {
+								$target_date = $pic_date_before; 
 							} else {
-								print $pic_date_after;
+								$target_date = $pic_date_after;
+							}
+
+							if ($target_date === '0001-01-01') {
+								print '不明';
+							} else {
+								print $target_date;
 							}
 						?>
 					</div>

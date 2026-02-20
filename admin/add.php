@@ -22,8 +22,8 @@
 				<input type="text" name="title" placeholder="no title">
 			</label>
 			<label>
-				<p>描いた日付を入力してください。</p>
-				<input type="text" name="date" placeholder="2025年10月10日～12日">
+				<p>描いた日付をすべて半角で入力してください。</p>
+				<input type="text" name="date" placeholder="2025-10-05">
 			</label>
 			<label>
 				<p><span class="required">必須</span>コメントを入力してください。</p>

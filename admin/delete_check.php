@@ -55,7 +55,15 @@
 				</div>
 				<div class="disp-text-group">
 					<p class="disp-title">制作日：</p>
-					<p class="disp-content"><?php print $pic_date; ?></p>
+					<p class="disp-content">
+						<?php 
+							if ($pic_date === '0001-01-01') {
+								print '不明';
+							} else {
+								print $pic_date;
+							}
+						?>
+					</p>
 				</div>
 				<div class="disp-text-group">
 					<p class="disp-title">コメント：</p>
