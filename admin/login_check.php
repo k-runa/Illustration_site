@@ -5,10 +5,6 @@
 	$staff_code = $post['code'];
 	$staff_pass = $post['pass'];
 
-	if ($staff_code) {
-		$staff_code = 0;
-	}
-
 	$staff_pass = md5($staff_pass);
 
 	try {
