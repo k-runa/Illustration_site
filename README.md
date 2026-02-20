@@ -22,4 +22,5 @@
 職業訓練校で学んだ内容の理解を深めるため
 
 ## 注意点
-- 管理画面からイラストを登録しようとすると、エラーが発生します。  これは、このサーバーがプログラムから新しくファイルを保存することを禁止しているためです。 ローカル環境(XAMPP)では以下の通り正常に動作します。(１枚目がadd_check.php、２枚目がedit_check.phpです。) 
+- 管理画面からイラストを登録しようとすると、エラーが発生します。  これは、このサーバーがプログラムから新しくファイルを保存することを禁止しているためです。 ローカル環境(XAMPP)では以下の通り正常に動作します。(１枚目がadd_check.php、２枚目がedit_check.phpです。) <img width="1920" height="1080" alt="add_check" src="https://github.com/user-attachments/assets/b205f527-a047-4ea8-aade-a935df275dfd" />
+<img width="1920" height="1080" alt="edit_check" src="https://github.com/user-attachments/assets/3d18fce2-a595-4eba-8ae7-bd99a21f29d8" />
