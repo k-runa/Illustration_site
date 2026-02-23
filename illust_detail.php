@@ -69,6 +69,4 @@
 		</div>
 				
 <?php require_once('includes/footer_public.php'); 
-var_dump($pic_date); 
-
 ?>
