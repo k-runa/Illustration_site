@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>【管理】ゆるめらくがき記録</title>
 		<meta name="robots" content="noindex nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="icon" type="image/png" href="../images/favicon.ico">
 		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
