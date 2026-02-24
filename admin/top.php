@@ -14,7 +14,7 @@
     <div class="menu-grid">
         <a href="add.php" class="menu-item menu-item-add">イラスト登録</a>
         <a href="edit_select.php" class="menu-item menu-item-edit">イラスト編集</a>
-        <a href="disp_select.php" class="menu-item menu-item-view">イラスト参照</a>
+        <a href="disp_select.php" class="menu-item menu-item-disp">イラスト参照</a>
         <a href="delete_select.php" class="menu-item menu-item-delete">イラスト削除</a>
     </div>
 </main>

@@ -243,10 +243,12 @@ h1 {
 }
 
 .submit-btn {
-	width: 400px;
+	width: 90%;
+	max-width: 400px;
 	background-color: #c9887c;
 	border-bottom: 4px #995c50 solid;
-	margin: 30px 10px;
+	margin: 30px auto;
+	display: block;
 }
 
 /* grid 一覧用
@@ -319,7 +321,7 @@ h1 {
 
 .menu-item-add { background: #eea08d; }
 .menu-item-edit { background: #b7a68c; }
-.menu-item-view { background: #89a79e; }
+.menu-item-disp { background: #89a79e; }
 .menu-item-delete { background: #95a4d0; }
 
 /* 詳細表示系
@@ -520,7 +522,16 @@ h1 {
 	}
 
 	.menu-grid {
-		grid-template-columns: 2, 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+		padding: 0 15px;
+	}
+
+	.menu-item {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 1 / 1;
+		font-size: 1rem;
 	}
 
 	.detail {
@@ -537,10 +548,10 @@ h1 {
 		align-items: center;
 	}
 
-	 .form {
-        max-width: 100%;
-        padding: 0 15px;
-    }
+	.form {
+		max-width: 100%;
+		padding: 0 15px;
+	}
 
 	.btn-center {
 		padding-top: 20px;
