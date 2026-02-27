@@ -145,7 +145,7 @@ h1 {
 }
 
 .h1-top br {
-		display: inline;
+		display: none;
 	}
 
 .h1-text {
