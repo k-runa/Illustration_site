@@ -144,6 +144,10 @@ h1 {
 	border-bottom: 4px #897960 solid;
 }
 
+.h1-top br {
+		display: inline;
+	}
+
 .h1-text {
 	display: block;
 	text-align: center;
@@ -503,6 +507,10 @@ h1 {
 	.error-text {
 		font-size: 1.5rem;
 		margin-top: 10px;
+	}
+
+	.h1-top br {
+		display: inline;
 	}
 
 	.h1-text br {
