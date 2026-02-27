@@ -7,7 +7,7 @@
 
 <main class="container">
     <div class="h1-group">
-        <h1 class="h1-top">イラスト管理トップメニュー</h1>
+        <h1 class="h1-top">イラスト管理<br>トップメニュー</h1>
         <p class="h1-text">イラストの登録・編集・参照・削除を行えます。</p>
     </div>
 
