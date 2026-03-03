@@ -38,7 +38,7 @@
 <main class="container container-center">
 	<div class="h1-group">
 		<h1 class="h1-edit">イラストデータ編集</h1>
-		<p class="h1-text">変更しない項目がある場合は未入力OK！</p>
+		<p class="h1-text">変更しない項目がある場合は<br>未入力OK！</p>
 	</div>
 	<div class="disp-pic edit-before-preview">
 		<p class="edit-before-text">\変更前の画像/</p>

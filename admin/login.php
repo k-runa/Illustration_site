@@ -6,7 +6,7 @@
 <main class="container">
 	<div class="h1-group">
 		<h1 class="h1-top">ログイン情報入力</h1>
-		<p class="h1-text">ログインに必要な情報を入力してください。</p>
+		<p class="h1-text">ログインに必要な情報を<br>入力してください。</p>
 	</div>
 
 	<form method="post" action="login_check.php">

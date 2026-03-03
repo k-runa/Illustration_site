@@ -32,7 +32,7 @@
 		</div>
 
 	<div class="btn-center">
-		<a href="top.php" class="top-back-btn btn">トップページへ<br>戻る</a>
+		<a href="top.php" class="top-back-btn btn">トップページ<br>へ戻る</a>
 		<button type="submit" class="submit-btn-2column btn">入力内容<br>確認画面へ</button>
 	</div>
 	</form>	
