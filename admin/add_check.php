@@ -60,7 +60,7 @@
 
 	</div>
 </main>
-<!-- ここから下　変更前 -->
+
 <?php if ($pic_picture['size'] === 0 || $pic_comment === '') { ?>
 	<p class="error-text">イラストの挿入もしくはコメントが<br>入力されていません！</p>
 	<div class="btn-center">
