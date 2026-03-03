@@ -32,8 +32,8 @@
 		</div>
 
 	<div class="btn-center">
-		<a href="top.php" class="top-back-btn btn">トップページ<br>へ戻る</a>
-		<button type="submit" class="submit-btn-2column btn">入力内容<br>確認画面へ</button>
+		<a href="top.php" class="top-back-btn btn">トップ<br>へ戻る</a>
+		<button type="submit" class="submit-btn-2column btn">入力内容<br>確認画面</button>
 	</div>
 	</form>	
 </main>
