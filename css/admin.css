@@ -2,6 +2,9 @@
 
 /* 共通部分　土台
 ------------------------------------------ */
+* {
+	box-sizing: border-box;
+}
 
 html {
 	font-size: 100%;
@@ -18,6 +21,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+}
+
+header, footer, main {
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 /* mainを余白埋める係にする */
@@ -135,6 +144,10 @@ h1 {
 	border-bottom: 4px #897960 solid;
 }
 
+.h1-top br {
+		display: none;
+	}
+
 .h1-text {
 	display: block;
 	text-align: center;
@@ -234,10 +247,12 @@ h1 {
 }
 
 .submit-btn {
-	width: 400px;
+	width: 90%;
+	max-width: 400px;
 	background-color: #c9887c;
 	border-bottom: 4px #995c50 solid;
-	margin: 30px 10px;
+	margin: 30px auto;
+	display: block;
 }
 
 /* grid 一覧用
@@ -310,7 +325,7 @@ h1 {
 
 .menu-item-add { background: #eea08d; }
 .menu-item-edit { background: #b7a68c; }
-.menu-item-view { background: #89a79e; }
+.menu-item-disp { background: #89a79e; }
 .menu-item-delete { background: #95a4d0; }
 
 /* 詳細表示系
@@ -494,6 +509,10 @@ h1 {
 		margin-top: 10px;
 	}
 
+	.h1-top br {
+		display: inline;
+	}
+
 	.h1-text br {
 		display: inline;
 	}
@@ -511,7 +530,16 @@ h1 {
 	}
 
 	.menu-grid {
-		grid-template-columns: 2, 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+		padding: 0 15px;
+	}
+
+	.menu-item {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 1 / 1;
+		font-size: 1rem;
 	}
 
 	.detail {
@@ -526,6 +554,15 @@ h1 {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.form {
+		max-width: 100%;
+		padding: 0 15px;
+	}
+
+	.btn {
+		font-size: 0.9rem;
 	}
 
 	.btn-center {

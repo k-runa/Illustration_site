@@ -1,6 +1,8 @@
 <?php require_once('../includes/head_admin.php'); ?>		
 <header>
-	<p class="header-title"><span>ゆるめらくがき記録 </span><span class="title-br">管理者専用サイト</span></p>
+	<p class="header-title">
+		ゆるめらくがき記録 <br>管理者専用サイト
+	</p>
 </header>
 
 <main class="container">

@@ -219,7 +219,9 @@ footer {
 	border-bottom: 4px #8fba83 solid;
 	border-radius: 50px;
 	padding: 10px 80px;
-
+}
+.back-btn:active {
+	transform: translateY(3px);
 }
 
 /* モバイル版 illust_detail.php
