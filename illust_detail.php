@@ -34,7 +34,7 @@
 
 		<div class="detail-wrapper">
 			<main class="illust-detail-body">
-				<h1 class="title">ラクガキ詳細</h1>
+				<h1 class="title">らくがき詳細</h1>
 				<div class="disp">
 					<div class="disp-pic">
 						<img src="admin/uploaded_pic/<?php print $pic_picture; ?>">
