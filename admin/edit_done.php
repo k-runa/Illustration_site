@@ -49,7 +49,7 @@
 
 	<div class="h1-group">
 		<h1 class="h1-edit">イラストデータ編集</h1>
-		<p class="h1-text">以下の通りにデータの編集が完了しました！</p>
+		<p class="h1-text">以下の通りにデータの編集が<br>完了しました！</p>
 	</div>
 
 	<div class="detail">

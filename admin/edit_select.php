@@ -28,7 +28,7 @@
 
 <main class="container">
 	<div class="h1-group">
-		<h1 class="h1-edit">イラストデータ参照</h1>
+		<h1 class="h1-edit">イラストデータ編集</h1>
 		<p class="h1-text">どのイラストを編集しますか？</p>
 	</div>
 	<div class="grid">

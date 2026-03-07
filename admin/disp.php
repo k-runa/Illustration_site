@@ -74,7 +74,7 @@
 
 	</main>
 		<div class="btn-center">
-			<button type="button" onclick="history.back()" class="one-back-btn btn">イラスト選択へ<br>戻る</button>
-			<a href="top.php" class="top-back-btn btn">トップページへ<br>戻る</a>
+			<button type="button" onclick="history.back()" class="one-back-btn btn">イラスト選択<br>へ戻る</button>
+			<a href="top.php" class="top-back-btn btn">トップページ<br>へ戻る</a>
 		</div>
 <?php require_once('../includes/footer_admin.php'); ?>
